@@ -1,0 +1,31 @@
+<div class="mt4">
+    <h3>Edit Book</h3>
+</div>
+
+<form method="POST" action="/books/{{book._id}}?_method=PUT">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" value="{{book.name}}" id="name" name="name">
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control" id="description" value="{{book.description}}" name="description">
+    </div>
+
+    <div class="mb-3">
+        <label for="videoId" class="form-label">Author</label>
+        <input type="text" class="form-control"value="{{book.author}}" id="Author" name="Author">
+    </div>
+
+    <div class="mb-3">
+        <label for="level" class="form-label">Price</label>
+        <input type="text" class="form-control" id="Price"value="{{book.price}}" name="Price">
+    </div>
+    <div class="mb-3">
+        <label for="level" class="form-label">Link Image</label>
+        <input type="text" class="form-control" id="link-image"value="{{book.image}}" name="Image">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
